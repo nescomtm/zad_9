@@ -1,17 +1,20 @@
 //var przyciskNaStronie.addEventListener(click,handler);
 var list = document.getElementById('list');
-var add = document.getElementsByTagName("button");
-button.addEventListener('click',myFunctionAdd(){});
 
+var add = document.getElementById('addElem');
+
+var liczba = 0;
+
+add.addEventListener('click', function() {
+    var liczba = document.getElementsByTagName('li').lenght;
+    
+    list.innerHTML += '<li>item '+liczba+'</li>';
+});
+
+console.log(liczba);
 console.log(list);
 console.log(add);
 
 
-function myFunctionAdd () {
-    numer = (getElementsByTagName);
-    list.innerHTML += '<li>item '+numer+'</li>';
-}
 
 
-
-myFunctionAdd();
