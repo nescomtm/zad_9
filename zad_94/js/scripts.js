@@ -1,5 +1,3 @@
-var poziomy = 0;
-
 function drawTree(poziomy) {   
     for (var i = 0; i < poziomy; i++) {
         star = '';
@@ -15,37 +13,28 @@ drawTree(10);
 drawTree(6);
 
 // wersja druga z pionowa choinka
-var poziomy1 = 0;
-var pion1 = '.';
+//var pion1 ='';  // tylko jak to usunę to mam bład deklaracji
 
 function drawTree1(poziomy1) {
-    if (poziomy1 === 1) {
-        poziomy1 = poziomy1 +2;
-        pion1 = '.';
-    } else if (poziomy1 === 2) {
-        poziomy1 = poziomy1 -1;
-        pion1 = '..';
-    } else if (poziomy1 === 3) {
-        //poziomy1 = poziomy1 -1;
-        pion1 = '.';
-    }
+    console.log('ilosc poziomów choinki '+poziomy1);
+    poziomy2 = poziomy1-1;
     
-    for (var i = 1; i < poziomy1; i++) {
-        pion1 += '.';
-    }
-    
-    var dlugoscPion = pion1.length;
-    
-    star1 = 'X';
-    console.log(pion1+star1);
-
     for (var i = 0; i < poziomy1; i++) {
-        star1 += 'XX';        
-        dlugoscPion = dlugoscPion -1;
-        pion1 = pion1.substr(0,dlugoscPion);
+        pion1 = '';
+        star1 = 'X';
+
+        for (var j = 1; j <= poziomy2; j++) {
+            pion1 += '.';
+        }
+
+        dlugoscPion = pion1.length;
+
+        for (var k = dlugoscPion; k < poziomy1-1; k++) {
+            star1 += 'XX';    
+        }
         console.log(pion1+star1);
+        poziomy2 --
     }
-  
 }
 
 drawTree1(5);
@@ -54,4 +43,6 @@ drawTree1(2);
 
 drawTree1(3);
 
-//drawTree1(6);
+drawTree1(13);
+
+drawTree1(6);
