@@ -14,7 +14,7 @@ if (allNames.indexOf(newName) === -1) {
     allNames = allNames.push(newName);
 
 } else {
-    console.log('nie mozna dodać nowego imienia '+newName)
+    console.log('nie mozna dodać nowego imienia ' + newName);
 }
 
 
@@ -26,5 +26,5 @@ if (allNames.indexOf(newName) === -1) {
 
 //alert('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
 
-//console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea); 
+//console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
 
