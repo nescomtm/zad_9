@@ -17,17 +17,17 @@ drawTree(6);
 
 function drawTree1(poziomy1) {
     console.log('ilosc poziomów choinki '+poziomy1);
-    poziomy2 = poziomy1-1;
+    var poziomy2 = poziomy1-1;
     
     for (var i = 0; i < poziomy1; i++) {
-        pion1 = '';
-        star1 = 'X';
+        var pion1 = '';
+        var star1 = 'X';
 
         for (var j = 1; j <= poziomy2; j++) {
             pion1 += '.';
         }
 
-        dlugoscPion = pion1.length;
+        var dlugoscPion = pion1.length;
 
         for (var k = dlugoscPion; k < poziomy1-1; k++) {
             star1 += 'XX';    
