@@ -128,15 +128,13 @@ function setGamePoints() {
     if (player.score == 10) {
         playerResultElem.innerHTML = "Wygrana! Pana "+player.name;
         //alert("Wygrana! Pana "+player.name);
-        //alert("Nacisnij OK aby rozpocząć gre od nowa");
-        var opoznienie = setTimeout(alert(playerResultElem.innerHTML),4000);
+        
         setGameElements();
 
     } else if (computer.score == 10) {
         computerResultElem.innerHTML = "Wygrana! Pana Komputer - koniec gry";
         //alert("Wygrana! Pana Computer - koniec gry");
-        //alert("Nacisnij OK aby rozpocząć gre od nowa");
-        var opoznienie = setTimeout(alert(computerResultElem.innerHTML),4000);
+        
         setGameElements(); 
     }
 }
